@@ -1,0 +1,222 @@
+{
+    "medical_history": {
+        "history": [
+            "ICD10 Not Available",
+            "Noncontributory."
+        ],
+        "date": "06/15/2020"
+    },
+    "surgical_history": {
+        "description": "Negative.",
+        "date": "06/15/2020"
+    },
+    "family_history": {
+        "description": "Unremarkable.",
+        "date": "06/15/2020"
+    },
+    "physician": {
+        "given": "Mujibur",
+        "family": "Majumder, MD"
+    },
+    "patient": {
+        "given": "IRIS",
+        "family": "BONIFACIO",
+        "dob": "05/19/1962"
+    },
+    "social_history": {
+        "description": "Unremarkable.",
+        "date": "06/15/2020"
+    },
+    "master_medication": {
+        "medication": "DONEPEZIL HCL 5 MG TABLET",
+        "instruction": "take 1 tablet (5 mg) by oral route once daily in the evening 90 Days; (27th Jan 2020 - 24th Jul 2020)",
+        "date": "06/15/2020",
+        "status": "Currently Active"
+    },
+    "master_problem": [
+        {
+            "code": "R0683",
+            "description": "Snoring"
+        },
+        {
+            "code": "J069",
+            "description": "Acute upper respiratory infection, unspecified"
+        },
+        {
+            "code": "Z6839",
+            "description": "39.9, adult"
+        },
+        {
+            "code": "Z6841",
+            "description": "44.9, adult"
+        },
+        {
+            "code": "Z6842",
+            "description": "49.9, adult"
+        },
+        {
+            "code": "E782",
+            "description": "Mixed hyperlipidemia"
+        },
+        {
+            "code": "M542",
+            "description": "Cervicalgia"
+        },
+        {
+            "code": "M5441",
+            "description": "Lumbago with sciatica, right side"
+        },
+        {
+            "code": "Z0271",
+            "description": "Encounter for disability determination"
+        },
+        {
+            "code": "Z5181",
+            "description": "Encounter for therapeutic drug level monitoring"
+        },
+        {
+            "code": "I10",
+            "description": "Essential (primary) hypertension"
+        },
+        {
+            "code": "R51",
+            "description": "Headache"
+        },
+        {
+            "code": "M170",
+            "description": "Bilateral primary osteoarthritis of knee"
+        },
+        {
+            "code": "L989",
+            "description": "Disorder of the skin and subcutaneous tissue, unspecified"
+        },
+        {
+            "code": "L309",
+            "description": "Dermatitis, unspecified"
+        },
+        {
+            "code": "M1991",
+            "description": "Primary osteoarthritis, unspecified site"
+        },
+        {
+            "code": "M25511",
+            "description": "Pain in right shoulder"
+        },
+        {
+            "code": "E6601",
+            "description": "Morbid (severe) obesity due to excess calories"
+        },
+        {
+            "code": "E662",
+            "description": "Morbid (severe) obesity with alveolar hypoventilation"
+        },
+        {
+            "code": "R070",
+            "description": "Pain in throat"
+        },
+        {
+            "code": "G894",
+            "description": "Chronic pain syndrome"
+        },
+        {
+            "code": "M75112",
+            "description": "cuff tear/ruptr of l shoulder, not trauma"
+        },
+        {
+            "code": "G4701",
+            "description": "Insomnia due to medical condition"
+        },
+        {
+            "code": "G4719",
+            "description": "Other hypersomnia"
+        },
+        {
+            "code": "G4733",
+            "description": "Obstructive sleep apnea (adult) (pediatric)"
+        },
+        {
+            "code": "R400",
+            "description": "Somnolence"
+        },
+        {
+            "code": "R55",
+            "description": "Syncope and collapse"
+        },
+        {
+            "code": "E119",
+            "description": "Type 2 diabetes mellitus without complications"
+        },
+        {
+            "code": "F0390",
+            "description": "Unspecified dementia without behavioral disturbance"
+        }
+    ],
+    "assessments": {
+        "code": "Z5181",
+        "assessment": "Encounter for therapeutic drug level monitoring",
+        "date": "06/15/2020"
+    },
+    "procedures_performed": {
+        "description": "1. 99214 - OFFICE VISIT EST PAT COMPREHENSIVE",
+        "date": "06/15/2020"
+    },
+    "encdate": "06/15/2020",
+    "patient_id": "4a3a69e97e3dff7dc395136d65d300a8224e68b7c3c5d5381b9acc365a3b5fab",
+    "medical_asst": "Stanton Collins, MD",
+    "visit_date": "06/15/2020",
+    "service_location": "TeleMedicine - Office",
+    "followup_visit": "after 1 month",
+    "primary_info": {
+        "MRN": "1000017",
+        "Title": "-",
+        "Last Name": "BONIFACIO",
+        "First Name": "IRIS",
+        "MI": "-",
+        "Suffix": "-",
+        "Age": "60 years 2  months 17 days"
+    },
+    "personal_info": {
+        "MRN": "1000017",
+        "Language": "Spanish",
+        "DOB": "05/19/1962",
+        "Category": "Primary Care",
+        "Gender": "Female",
+        "Marital Status": "Unknown",
+        "Siblings": "-",
+        "Ethinicity": "Hispanic or Latino",
+        "Primary Care Physician": "-",
+        "Other": "-",
+        "Race": "PERSONAL TOUCH",
+        "Additional Race": "-",
+        "Communication Preference": "Hispanic or Latino"
+    },
+    "contact_info": {
+        "Address1": "580 Castlehill Ave",
+        "Address2": "-",
+        "City": "BRONX",
+        "State": "NY",
+        "Phone": "(347)252-4463",
+        "Zip": "10473",
+        "Cell": "-",
+        "Fax": "-",
+        "Email": "-"
+    },
+    "emergency_info": {
+        "Name": "LIDIA VARGAS",
+        "Address1": "580 Castlehill Ave",
+        "Address2": "-",
+        "City": "BRONX",
+        "State": "NY",
+        "Phone": "-",
+        "Zip": "10473",
+        "Relation": "Daughter",
+        "Cell": "(347)843-7456",
+        "Email": "-"
+    },
+    "clinical_info": [
+        "Personal Touch Medical",
+        "3485 East Tremont Avenue  BRONX NY USA 10465",
+        "Tel:(718)828-1549",
+        "Fax:(718)828-5029"
+    ]
+}

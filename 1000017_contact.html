@@ -1,0 +1,1980 @@
+<html><head id="Head1"><title>
+
+</title>
+    <style type="text/css">
+
+	@import url("css/common.css");	
+	@import url("css/abcpdf.css");
+		.labelheader{font-size:14px;text-transform:uppercase;background-color:#000000;color:#FFFFFF;}
+		.page-break{page-break-before:always;}
+		span{padding:1px;}
+		.btn-info {
+			color: #ffffff;
+			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+			border: 0 none;
+			padding-left:10px;
+			padding-right:10px;
+			padding-top:4px;
+			padding-bottom:4px;
+			background-color: #49afcd;
+			*background-color: #2f96b4;
+			background-repeat: repeat-x;
+			background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+			border-left-color: #2f96b4;
+			border-right-color: #2f96b4;
+			border-top-color: #2f96b4;
+			border-bottom-color: #1f6377;
+			*-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		}
+		.btn-danger {
+			color: #ffffff;
+			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+			background-color: #da4f49;
+			*background-color: #bd362f;
+			background-repeat: repeat-x;
+			border: 0 none;
+			padding-left:10px;
+			padding-right:10px;
+			padding-top:4px;
+			padding-bottom:4px;
+			background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+			border-left-color: #bd362f;
+			border-right-color: #bd362f;
+			border-top-color: #bd362f;
+			border-bottom-color: #802420;
+			*-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		}
+		    button,
+            html input[type="button"],
+            input[type="reset"],
+            input[type="submit"] {
+              cursor: pointer;
+              -webkit-appearance: button;
+            }
+    </style>
+    <link href="./css/common.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="html5/scripts/alertify/themes/alertify.css"><link rel="stylesheet" type="text/css" href="html5/scripts/alertify/themes/alertify.bootstrap.css">
+    <script src="html5/scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="scripts/cookies.js" type="text/javascript"></script>
+    <script src="table.js" type="text/javascript"></script>
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="validate.js" type="text/javascript"></script>
+    <script src="scripts/dhtmlwindow/dhtmlwindow.js" type="text/javascript"></script></head><body><div id="dhtmlwindowholder"><span style="display:none">.</span></div>
+    <script src="scripts/base64.js" type="text/javascript"></script>
+    <script src="scripts/json2.js" type="text/javascript"></script>
+    <script type="text/javascript" src="html5/scripts/alertify/alertify.js"></script>
+    <script language="javascript" type="text/javascript">
+        var session = readCookie('session');
+        if (session) {
+            if (readCookie(session + 'clientid').length == 0 || readCookie(session + 'login') != 'True') {
+                location.assign('login.aspx');
+            }
+        } else {
+            location.assign('login.aspx');
+        }
+    </script>
+
+
+    <center uipath_inframe_custom_id="1">
+        <div style="border: 1px solid black; top: 5px; left: 5px; width: 950px" id="div_show">
+            <table cellspacing="0" cellpadding="2" border="0" align="center" width="100%">
+                <tbody><tr height="50" align="center" id="tr_clinic_add">
+                    <td align="center" style="vertical-align: top;" colspan="2">
+                        <br>
+                        <div id="div_clinic_add" style="padding-bottom: 10px;">
+                            <table cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td align="middle">
+                                            <table cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="font-weight: bold; white-space: nowrap; font-size: 22px; color: #010101;
+                                                            font-family: Lucida Grande,Arial,sans-serif" valign="center" nowrap="">
+                                                            <script type="text/javascript">document.write(readCookie(session + 'c1'));</script>Personal Touch Medical
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size: 14px; color: #010101; font-family: Lucida Grande,Arial,sans-serif" align="middle">
+                                            <script type="text/javascript"> document.write(readCookie(session + 'c2'));</script>3485 East Tremont Avenue  BRONX NY USA 10465
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="middle">
+                                            <table cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="font-size: 14px; color: #010101; font-family: Lucida Grande,Arial,sans-serif">
+                                                            Tel:&nbsp;
+                                                            <script type="text/javascript">document.write(readCookie(session + 'c3'));</script>(718)828-1549
+                                                        </td>
+                                                        <td width="60">
+                                                        </td>
+                                                        <td style="font-size: 14px; color: #010101; font-family: Lucida Grande,Arial,sans-serif">
+                                                            Fax:&nbsp;
+                                                            <script type="text/javascript">document.write(readCookie(session + 'c4'));</script>(718)828-5029
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="tr_clinic">
+                    <td colspan="2">
+                        <div id="div_clinic">
+                            <table width="100%" align="left" border="0" cellpadding="1" cellspacing="0" class="text_meduim">
+                                <tbody><tr style="font-weight: bold">
+                                    <td style="text-align: center;">
+                                        MRN
+                                    </td>
+                                    <td style="text-align: center;">
+                                        Title
+                                    </td>
+                                    <td style="text-align: center;">
+                                        Last Name
+                                    </td>
+                                    <td style="text-align: center;">
+                                        First Name
+                                    </td>
+                                    <td style="text-align: center;">
+                                        MI
+                                    </td>
+                                    <td style="text-align: center;">
+                                        Suffix
+                                    </td>
+                                    <td style="text-align: center;">
+                                        Age
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 12%; text-align: center;">
+                                        <span id="fldchart" style="width: 100%;">1000017</span>
+                                    </td>
+                                    <td style="width: 5%; text-align: center;">
+                                        <span id="fldtitle" style="width: 100%;"> - </span>
+                                    </td>
+                                    <td style="width: 20%; text-align: center;">
+                                        <span id="fldlastname" style="width: 100%;">BONIFACIO</span>
+                                    </td>
+                                    <td style="width: 20%; text-align: center;">
+                                        <span id="fldfirstname" style="width: 100%;">IRIS</span>
+                                    </td>
+                                    <td style="width: 6%; text-align: center;">
+                                        <span id="fldmi" style="width: 100%;"> - </span>
+                                    </td>
+                                    <td style="width: 6%; text-align: center;">
+                                        <span id="fldsuffix" style="width: 100%;"> - </span>
+                                    </td>
+                                    <td style="width: 31%; text-align: center;">
+                                        <span id="fldage" style="width: 100%;">60 years 2  months 17 days</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8">
+                                        <hr style="border-color: black; border-style: dashed; border-top-width: 0px; border-left-width: 0px;
+                                            border-right-width: 0">
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top;" valign="top" colspan="2" class="text_meduim">
+                        <table cellspacing="2" cellpadding="2" width="100%" class="text_meduim">
+                            <tbody><tr>
+                                <td colspan="4" align="center" class="labelheader">
+                                    <b>Personal Information</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; text-align: left;">
+                                    MRN
+                                </td>
+                                <td style="text-align: left;">
+                                    <span id="fldmrn">1000017</span>
+                                </td>
+                                <td style="font-weight: bold; text-align: left;">
+                                    Language
+                                </td>
+                                <td style="text-align: left;">
+                                    <span id="fldlanguage">Spanish</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; text-align: left;">
+                                    DOB
+                                </td>
+                                <td style="text-align: left;">
+                                    <span id="flddob">05/19/1962</span>
+                                </td>
+                                <td style="font-weight: bold; text-align: left;">
+                                    Category
+                                </td>
+                                <td style="text-align: left;">
+                                    <span id="fldcategory">Primary Care</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; text-align: left;">
+                                    Gender
+                                </td>
+                                <td style="text-align: left;">
+                                    <span id="fldsex">Female</span>
+                                </td>
+                                <td style="font-weight: bold; text-align: left;">
+                                    Marital Status
+                                </td>
+                                <td style="text-align: left;">
+                                    <span id="fldmarital">Unknown</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; text-align: left;">
+                                    Siblings
+                                </td>
+                                <td style="text-align: left;">
+                                    <span id="fldsiblings"> - </span>
+                                </td>
+                                <td style="font-weight: bold; text-align: left;">
+                                    Ethinicity
+                                </td>
+                                <td style="text-align: left;">
+                                    <span id="fldethinicity">Hispanic or Latino</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">
+                                    <b>Referring Physician </b>
+                                </td>
+                                <td style="text-align: left;">
+                                    <span id="fldrefphysician"> - </span>
+                                </td>
+                                <td style="text-align: left;">
+                                    <b>Referring Physician Contact </b>
+                                </td>
+                                <td style="text-align: left;">
+                                    <span id="fldrefphysician_tel"> - </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; width: 180px; text-align: left;">
+                                    Primary Care Physician
+                                </td>
+                                <td style="width: 250px; text-align: left;">
+                                    <span id="fld_pri_care_phy">PERSONAL TOUCH</span>
+                                </td>
+                                <td style="font-weight: bold; text-align: left;">
+                                    Other
+                                </td>
+                                <td style="width: 280px; text-align: left;">
+                                    <span id="fldother"> - </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; text-align: left;">
+                                    Race
+                                </td>
+                                <td style="text-align: left;">
+                                    <span id="fldrace">Hispanic or Latino</span>
+                                </td>
+                                <td style="font-weight: bold; text-align: left;">
+                                    Additional Race
+                                </td>
+                                <td style="text-align: left;">
+                                    <span id="fldrace1"> - </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; text-align: left;">
+                                    Communication Preference
+                                </td>
+                                <td style="text-align: left;">
+                                    <span id="fldCommPref" style="width: 250px;">Home Phone</span>
+                                </td>
+                            </tr>
+                            <tr style="display: none;">
+                                <td colspan="4">
+                                    <b>Enterprise Master Patient Index Id </b><span id="fldptempii"> - </span>
+                                </td>
+                            </tr>
+                            <tr style="display: none;">
+                                <td colspan="4">
+                                    <b>Regional Patient Identifier </b><span id="fldptrpi"> - </span>
+                                </td>
+                            </tr>
+                            <tr style="display: none;">
+                                <td colspan="4">
+                                    <b>National Patient Identifier </b><span id="fldptnpi"> - </span>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <tr id="sectin_coninf">
+                    <td style="vertical-align: top;" valign="top" colspan="2" class="text_meduim">
+                        <table cellspacing="2" cellpadding="2" width="100%" class="text_meduim">
+                            <tbody><tr>
+                                <td colspan="2" align="center" class="labelheader">
+                                    <b>Contact Information</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <table width="100%" cellspacing="2" cellpadding="2" align="left" class="text_meduim">
+                                        <tbody><tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Address1
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="fldaddress1">580 Castlehill Ave</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Address2
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="fldaddress2"> - </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; width: 100px; text-align: left;">
+                                                City
+                                            </td>
+                                            <td style="width: 330px; text-align: left;">
+                                                <span id="fldcity">BRONX</span>
+                                            </td>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                State
+                                            </td>
+                                            <td style="width: 400px; text-align: left;">
+                                                <span id="fldstate">NY</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Phone
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="fldphone">(347)252-4463</span>
+                                            </td>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Zip
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="fldzip">10473</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Cell
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="fldcell"> - </span>
+                                            </td>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Fax
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="fldfax"> - </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Email
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="fldemail"> - </span>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <tr id="sectin_erx_phy">
+                    <td style="vertical-align: top;" valign="top" colspan="2" class="text_meduim">
+                        <table cellspacing="2" cellpadding="2" width="100%" border="0" class="text_meduim">
+                            <tbody><tr>
+                                <td colspan="2" align="center" class="labelheader" style="text-transform: none;">
+                                    <b>eRx Pharmacy</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <table width="100%" cellspacing="2" cellpadding="2" align="left" class="text_meduim">
+                                        <tbody><tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Pharmacy
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="flderx_def_pharmcy">CASTLE HILL COMMUNITY PHARMACY     </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Address1
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="flderx_address1">706 CASTLE HILL AVENUE             </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Address2
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="flderx_address2">                                   </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left;font-weight: bold; width: 100px">
+                                                City
+                                            </td>
+                                            <td style="text-align: left;width: 330px">
+                                                <span id="flderx_city">BRONX                              </span>
+                                            </td>
+                                            <td style="text-align: left;font-weight: bold;">
+                                                State
+                                            </td>
+                                            <td style="text-align: left;width: 400px;">
+                                                <span id="flderx_state">NY</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Phone
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="flderx_phone">7183198200               </span>
+                                            </td>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Zip
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="flderx_zip">10473      </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Email
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="flderx_email">                                                                                </span>
+                                            </td>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Fax
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="flderx_fax">7183198240               </span>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <tr id="sectin_ci1">
+                    <td style="vertical-align: top;" valign="top" colspan="2" class="text_meduim">
+                        <table cellspacing="2" cellpadding="2" width="100%" class="text_meduim">
+                            <tbody><tr>
+                                <td colspan="2" style="text-align: center;" class="labelheader">
+                                    <b>Emergency Contact Information</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <table width="100%" cellspacing="2" cellpadding="2" align="left" class="text_meduim">
+                                        <tbody><tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Name
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="fld_ci1_name">LIDIA VARGAS</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Address1
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="fld_ci1_address1">580 Castlehill Ave</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Address2
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="fld_ci1_address2"> - </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left; width: 100px">
+                                                City
+                                            </td>
+                                            <td style="text-align: left; width: 330px">
+                                                <span id="fld_ci1_city">BRONX</span>
+                                            </td>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                State
+                                            </td>
+                                            <td style="text-align: left; width: 400px">
+                                                <span id="fld_ci1_state">NY</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Phone
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="fld_ci1_phone"> - </span>
+                                            </td>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Zip
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="fld_ci1_zip">10473</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Relation
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="fld_ci1_relation">Daughter</span>
+                                            </td>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Cell
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="fld_ci1_cell">(347)843-7456</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Email
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="fld_ci1_email"> - </span>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <tr id="sectin_ci2" style="display: none;">
+                    <td style="vertical-align: top;" valign="top" colspan="2" class="text_meduim" width="100%">
+                        <table cellspacing="2" cellpadding="2" width="100%" class="text_meduim">
+                            <tbody><tr>
+                                <td colspan="2" align="center" class="labelheader">
+                                    <b>Emergency Contact Information</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <table width="100%" cellspacing="2" cellpadding="2" align="left" class="text_meduim">
+                                        <tbody><tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Name
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="fld_ci2_name"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Address1
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="fld_ci2_address1"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Address2
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="fld_ci2_address2"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left; font-weight: bold; width: 100px">
+                                                City
+                                            </td>
+                                            <td style="text-align: left; width: 330px">
+                                                <span id="fld_ci2_city"></span>
+                                            </td>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                State
+                                            </td>
+                                            <td style="text-align: left; width: 400px">
+                                                <span id="fld_ci2_state"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Phone
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="fld_ci2_phone"></span>
+                                            </td>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Zip
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="fld_ci2_zip"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Relation
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="fld_ci2_relation"></span>
+                                            </td>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Cell
+                                            </td>
+                                            <td style="text-align: left;">
+                                                <span id="fld_ci2_cell"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold; text-align: left;">
+                                                Email
+                                            </td>
+                                            <td style="text-align: left;" colspan="3">
+                                                <span id="fld_ci2_email"></span>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+            <div style="top: 5px; left: 5px;">
+                <table width="100%">
+                    <tbody><tr id="sectin_inspro_wcmp" style="display: none;">
+                        <td style="vertical-align: top;" colspan="2" class="text_meduim">
+                            <table cellspacing="2" cellpadding="2" width="100%" class="text_meduim">
+                                <tbody><tr>
+                                    <td colspan="2" align="center" class="labelheader">
+                                        <b>Insurance Profile(Worker Comp Profile)</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table width="100%" cellspacing="2" cellpadding="2" align="left" class="text_meduim">
+                                            <tbody><tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Carrier
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_insW_cmp"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Policy Number
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_insW_polnum"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Type
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_insW_type"></span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left; white-space: nowrap;" width="10%" nowrap="">
+                                                    Carrier Case No
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_insW_caseno"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; width: 120px; text-align: left;">
+                                                    Start Date
+                                                </td>
+                                                <td style="text-align: left; width: 300px;">
+                                                    <span id="fld_insW_stdt"></span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left; white-space: nowrap;" nowrap="">
+                                                    End/Discharge Date
+                                                </td>
+                                                <td style="text-align: left; width: 330px;">
+                                                    <span id="fld_insW_enddis"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Accident Date
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_insW_acc"></span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    State Code
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_insW_st_cd"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left; white-space: nowrap;" nowrap="">
+                                                    Note
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_insW_note"></span>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                    <tr id="sectin_inspro_Nof" style="display: none;">
+                        <td style="vertical-align: top;" colspan="2" class="text_meduim">
+                            <table cellspacing="2" cellpadding="2" width="100%" class="text_meduim">
+                                <tbody><tr>
+                                    <td colspan="2" align="center" class="labelheader">
+                                        <b>Insurance Profile(Nofault)</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table width="100%" cellspacing="2" cellpadding="2" align="left" class="text_meduim">
+                                            <tbody><tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Carrier
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_ins_cmp"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Policy Number
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_ins_polnum"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Type
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_ins_type"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left; width: 120px">
+                                                    Start Date
+                                                </td>
+                                                <td style="text-align: left; width: 310px">
+                                                    <span id="fld_ins_stdt"></span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left; white-space: nowrap;" nowrap="">
+                                                    End/Discharge Date
+                                                </td>
+                                                <td style="text-align: left; width: 330px">
+                                                    <span id="fld_ins_enddis"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Accident Date
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins_acc"></span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    State Code
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins_st_cd"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left; white-space: nowrap;" nowrap="">
+                                                    Note
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_ins_note"></span>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                    <tr id="sectin_emp_Inf" style="display: none;">
+                        <td style="vertical-align: top;" colspan="2" class="text_meduim">
+                            <table cellspacing="2" cellpadding="2" width="100%" class="text_meduim">
+                                <tbody><tr>
+                                    <td colspan="2" align="center" class="labelheader">
+                                        <b>Employer Information</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table width="100%" cellspacing="2" cellpadding="2" align="left" class="text_meduim">
+                                            <tbody><tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Employer
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_emp_name"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Address1
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_emp_address1"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Address2
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_emp_address2"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left; width: 100px">
+                                                    City
+                                                </td>
+                                                <td style="width: 330px; text-align: left;">
+                                                    <span id="fld_emp_city"></span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    State
+                                                </td>
+                                                <td style="width: 400px; text-align: left;">
+                                                    <span id="fld_emp_state"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Phone
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_emp_phone"></span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Zip
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_emp_zip"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Cell
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_emp_cell"></span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Fax
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_emp_fax"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Email
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_emp_email"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Status
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_emp_status"></span>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                    <tr id="sectin_priinscar">
+                        <td class="text_meduim" style="width: 50%;" width="50%">
+                            <table cellspacing="2" cellpadding="2" width="100%" class="text_meduim">
+                                <tbody><tr>
+                                    <td colspan="2" style="text-align: center;" align="center" class="labelheader">
+                                        <b>Primary Insurance Carrier</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="text-align: left;">
+                                        <table width="100%" cellspacing="2" cellpadding="2" class="text_meduim" align="left">
+                                            <tbody><tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Carrier
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_ins1_name" style="width: 300px;">Fidelis Medicare Advantage</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Address
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_ins1_address" style="width: 300px;">PO BOX 170</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    City
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins1_city" style="width: 130px;">BUFFALO</span>
+                                                </td>
+                                                <td style="font-weight: bold" width="10%">
+                                                    State
+                                                </td>
+                                                <td style="text-align: left; width: 40%;" width="40%">
+                                                    <span id="fld_ins1_state" style="width: 130px;">NY</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left; width:25%;">
+                                                    Phone
+                                                </td>
+                                                <td style="text-align: left; white-space: nowrap; width:35%;">
+                                                    <span id="fld_ins1_phone" style="width: 130px;">(800) 247-1447</span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left; width:20%;">
+                                                    Zip
+                                                </td>
+                                                <td style="text-align: left; width:20%;">
+                                                    <span id="fld_ins1_zip" style="width: 130px;">14226</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Plan
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins1_plan" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Facsimile
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins1_fax" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    ID No
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins1_idno" style="width: 130px;">11315</span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left; white-space: nowrap;" nowrap="">
+                                                    Effective Date
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins1_expiry" style="width: 130px;">07/14/2017</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Copay
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins1_copay" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Policy No
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins1_policyno" style="width: 130px;">50007521800</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Subscriber
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins1_subscriber" style="width: 130px;">Patient</span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Expiry Date
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins1_expdate" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left; white-space: nowrap;" nowrap="">
+                                                    Do Not Balance Bill
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins1_dnbb" style="width: 30px;">No</span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Receiver
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins1_receiver" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left; white-space: nowrap;" nowrap="">
+                                                    EMR Insurance Id
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins1_emrinsid" style="width: 50px;">399</span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Category
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins1_category" style="width: 130px;">Affinity Medicaid</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left; white-space: nowrap;" nowrap="">
+                                                    Incentive Type
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_ins1_inctype" style="width: 300px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Program Plan Type
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_ins1_plantype"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left; white-space: nowrap;" nowrap="" colspan="2">
+                                                    <b>Capitation Agreement with Payer </b><span id="fld_ins1_capitation">No</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Note
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_ins1_note">medicare -132720551A
+PATIENT CHANGE PCP TO CHRISTOPHER ENU AS MAY 21 2018 REFERENCE #181410007866</span>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                        <td class="text_meduim" style="vertical-align: top; width: 50%;" width="50%">
+                            <table cellspacing="2" cellpadding="2" width="100%" class="text_meduim">
+                                <tbody><tr>
+                                    <td colspan="2" align="center" class="labelheader">
+                                        <b>Primary Guarantor</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table cellspacing="2" cellpadding="2" width="100%" align="left" border="0" class="text_meduim">
+                                            <tbody><tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Name
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_gname" style="width: 300px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Address
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_gaddress" style="width: 300px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    City
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gcity" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;" width="17%">
+                                                    State
+                                                </td>
+                                                <td style="text-align: left; width: 33%;" width="33%">
+                                                    <span id="fld_gstate" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Phone
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gphone" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Zip
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gzip" style="width: 130px;">  </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Cell
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gcell" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Fax
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gfax" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Relation
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_grelation" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Email
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gemail" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    D O B
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gdob" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Gender
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gsex" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                    <tr id="sectin_secinscar">
+                        <td class="text_meduim" style="vertical-align: top;" width="25%">
+                            <table cellspacing="2" cellpadding="2" width="100%" class="text_meduim">
+                                <tbody><tr>
+                                    <td colspan="2" align="center" class="labelheader">
+                                        <b>Secondary Carrier Information</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table cellspacing="2" cellpadding="2" width="100%" align="left" class="text_meduim">
+                                            <tbody><tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Carrier
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_ins2_name" style="width: 300px;">Fidelis of New York</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Address
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_ins2_address" style="width: 300px;">PO BOX 898</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left; width:25%;">
+                                                    City
+                                                </td>
+                                                <td style="text-align: left; width:35%;">
+                                                    <span id="fld_ins2_city" style="width: 130px;">BUFFALO</span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left; width:20%;">
+                                                    State
+                                                </td>
+                                                <td style="text-align: left; width: 20%;">
+                                                    <span id="fld_ins2_state" style="width: 130px;">NY</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Phone
+                                                </td>
+                                                <td style="text-align: left; white-space: nowrap;">
+                                                    <span id="fld_ins2_phone" style="width: 130px;">888-343-3547</span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Zip
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins2_zip" style="width: 130px;">14226</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Plan
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins2_plan" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Facsimile
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins2_fax" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    ID No
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins2_idno" style="width: 130px;">11315</span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left; white-space: nowrap;" nowrap="">
+                                                    Effective Date
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins2_expiry" style="width: 130px;">09/09/2021</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Copay
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins2_copay" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Policy No
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins2_policyno" style="width: 130px;">XH64791R</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Subscriber
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins2_subscriber" style="width: 130px;">Patient</span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Expiry Date
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins2_expdate" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    MSP Type
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins2_msptype" style="width: 30px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Receiver
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins2_receiver" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left; white-space: nowrap;" nowrap="">
+                                                    EMR Insurance Id
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins2_emrinsid" style="width: 50px;">229</span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Category
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_ins2_category" style="width: 130px;">Affinity Medicaid</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left; white-space: nowrap;" nowrap="">
+                                                    Incentive Type
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_ins2_inctype" style="width: 300px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left; white-space: nowrap;" nowrap="">
+                                                    Program Plan Type
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_ins2_plantype"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Note
+                                                </td>
+                                                <td style="text-align: left;" colspan="0" wrap="">
+                                                    <span id="fld_ins2_note" style="width:130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                        <td class="text_meduim" style="vertical-align: top;" width="25%">
+                            <table cellspacing="2" cellpadding="2" width="100%" class="text_meduim">
+                                <tbody><tr>
+                                    <td colspan="2" align="center" class="labelheader">
+                                        <b>Secondary Guarantor</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table cellspacing="2" cellpadding="2" width="100%" align="left" border="0" class="text_meduim">
+                                            <tbody><tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Name
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_gname2" style="width: 300px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Address
+                                                </td>
+                                                <td style="text-align: left;" colspan="3">
+                                                    <span id="fld_gaddress2" style="width: 300px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    City
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gcity2" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;" width="17%">
+                                                    State
+                                                </td>
+                                                <td style="text-align: left; width: 33%;" width="33%">
+                                                    <span id="fld_gstate2" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Phone
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gphone2" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Zip
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gzip2" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Cell
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gcell2" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Fax
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gfax2" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Relation
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_grelation2" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Email
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gemail2" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    D O B
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gdob2" style="width: 130px;"> - </span>
+                                                </td>
+                                                <td style="font-weight: bold; text-align: left;">
+                                                    Gender
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span id="fld_gsex2" style="width: 130px;"> - </span>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div style="top: 5px; width: 950px">
+                <table width="100%">
+                    <tbody><tr>
+                        <td colspan="2">
+                            <div id="div_referral" style="display: none">
+                                <table cellspacing="2" cellpadding="0" width="100%">
+                                    <tbody><tr>
+                                        <td align="center" class="labelheader">
+                                            <b>Referral Information - Manage Consults</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            <table id="tbl_referral" cellpadding="2" cellspacing="0" border="0" width="100%" class="table_box or text_meduim">
+                                                <tbody><tr align="center" style="font-weight: bold; text-align: center;" bgcolor="#C9C9C9">
+                                                    <td>
+                                                        Referred By
+                                                    </td>
+                                                    <td>
+                                                        Pre Auth. Code
+                                                    </td>
+                                                    <td>
+                                                        Start Visit
+                                                    </td>
+                                                    <td>
+                                                        End Visit
+                                                    </td>
+                                                    <td>
+                                                        Visit Allow
+                                                    </td>
+                                                    <td>
+                                                        Visit Used
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="div_other_entity" style="display: none">
+                                <table cellspacing="2" cellpadding="0" width="100%">
+                                    <tbody><tr>
+                                        <td align="center" class="labelheader">
+                                            <b>Other Entity Details</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            <table id="tbl_oth_entity" cellpadding="2" cellspacing="0" border="0" width="100%" class="table_box or text_meduim">
+                                                <tbody><tr bgcolor="#C9C9C9" align="center" style="font-weight: bold">
+                                                    <td>
+                                                        Entity name/Lastname
+                                                    </td>
+                                                    <td>
+                                                        First Name
+                                                    </td>
+                                                    <td>
+                                                        Contact Name
+                                                    </td>
+                                                    <td>
+                                                        Address
+                                                    </td>
+                                                    <td>
+                                                        City
+                                                    </td>
+                                                    <td>
+                                                        State
+                                                    </td>
+                                                    <td>
+                                                        Phone
+                                                    </td>
+                                                    <td>
+                                                        Fax
+                                                    </td>
+                                                    <td>
+                                                        Comments
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2">
+                            <div id="divprint">
+                                <input class="btn btn-small btn-info" type="button" id="btn_print" name="btn_print" onclick="GeneratePDF()" value="Print As PDF">&nbsp;&nbsp;
+                                <input class="btn btn-small btn-danger" type="button" id="close" name="close" value="Close" onclick="CloseWindow()">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+    </center>
+
+<script type="text/javascript">
+    function CloseWindow() {
+        try {
+            dhtmlwindow.close(findvar(mHWND));
+        } catch (e) { Alertify.log.error("error= " + e.message); }
+    }
+    function GeneratePDF() {
+        $("#divprint").hide();
+        $("#div_clinic_add").hide();
+        $("#div_clinic").hide();
+        $("#tr_clinic").hide();
+        $("#tr_clinic_add").hide();
+
+        var mhtmldata = "", mhtmlheader1 = "", mbodydocrect = "", mfooterrect = "", mheaderdocrect = "";
+        mheaderdocrect = "10 690 600 786";
+        mbodydocrect = "10 50 600 680"; //lbwh
+        mfooterrect = "10 10 600 30";
+
+        var mhtmldatatable = ge$("div_show").innerHTML;
+        var mhtmldata = "<html><head><style type='text/css'>" + document.getElementsByTagName('style')[0].innerHTML + "</style>";
+        mhtmldata = mhtmldata + "</head><body style='margin-top:0cm'><table cellspacing=0 cellpadding=0 width='100%'><tr><td colspan='3'>" + mhtmldatatable + "</td></tr></table></body></html>";
+
+        var mhtmlheaderdata = $("#div_clinic_add").html();
+        mhtmlheaderdata = mhtmlheaderdata + "<br>" + $("#div_clinic").html();
+
+        var mhtmlheader = "<html><head><style type='text/css'>" + document.getElementsByTagName('style')[0].innerHTML + "</style>";
+        mhtmlheader = mhtmlheader + "</head><body style='margin-top:0cm'><table cellspacing=0 cellpadding=0 width='100%'><tr><td colspan='3' align='center'>" + mhtmlheaderdata + "</td></tr></table></body></html>";
+
+        $.ajax({
+            type: "POST",
+            url: urlpath + "Report_Generate_pdf.aspx",
+            dataType: "text",
+            data: "htmldata=" + doEnc(mhtmldata) + "&htmlheader=" + doEnc(mhtmlheader) + "&headerdocrect=" + doEnc(mheaderdocrect) + "&footerrect=" + doEnc(mfooterrect) + "&datadocrect=" + doEnc(mbodydocrect),
+            contentType: "application/x-www-form-urlencoded;charset=UTF-8",
+            success: function (ResponseText) {
+                mFILENAME = ResponseText;
+                var mht = viewport().height - 100;
+                var mwt = viewport().width - 100;
+                var hwndpdf = top.dhtmlwindow.open("pdf", "iframe", "view_file.aspx?temp=12345&view=1&filename=" + mFILENAME, "Print as PDF", "width=" + mwt + "px,height=" + mht + "px,resize=1,scrolling=1,center=1");
+                hwndpdf.onclose = function () { return true; }
+
+                var mactiveret = activity_log('Print Demographics', 'Print', mSSN, '');
+                var mobj = JSON.parse(mactiveret);
+                if (mobj.err != "0") {
+                    Alertify.log.error("Error in activti log: "+mobj.msg);
+                }
+                $("#divprint").show();
+                $("#div_clinic_add").show();
+                $("#div_clinic").show();
+                $("#tr_clinic").show();
+                $("#tr_clinic_add").show();
+            },
+            error: function (response, textStatus, errorThrown) {
+                var mr = jQuery.parseJSON(response.responseText);
+                Alertify.log.error("ERROR#103: " + mr.Message);
+            }
+        });
+
+    }
+    function setprint() {
+        window.onbeforeprint = function () { $("#divprint").hide(); }
+        window.onafterprint = function () {$("#divprint").show(); window.onbeforeprint = null; window.onafterprint = null;}
+        document.execCommand('print', false, null);
+    }
+    function GetData() {      
+        $.ajax({
+            type: "POST",
+            url: urlpath + "chart_print_action.aspx/fnchart_print",
+            contentType: "application/json; charset=utf-8",
+            data: '{ "fldssn": "' + mSSN + '" }',
+            async: false,
+            dataType: "json",
+            success: function (ResponseText) {              
+                var mreturndata = ResponseText.d;
+                if (mreturndata.Data.details[0] != "") {
+                    var mobjson = mreturndata.Data.details[0];
+                    if (mreturndata.ErrNum == 0) {
+                        //  fldssn.innerHTML = mobjson.ptssn;
+                        $("#fldchart").html((mobjson.mrn != "" ? mobjson.mrn : " - "));
+                        $("#fldtitle").html((mobjson.title != "" ? mobjson.title : " - "));
+                        $("#fldlastname").html((mobjson.lastname != "" ? mobjson.lastname : " - "));
+                        $("#fldfirstname").html((mobjson.firstname != "" ? mobjson.firstname : + " - "));
+                        $("#fldmi").html((mobjson.mi != "" ? mobjson.mi : " - "));
+                        $("#fldsuffix").html((mobjson.suffix != "" ? mobjson.suffix : " - " ));
+                        $("#fldage").html((mobjson.age != "" ? mobjson.age : " - "));
+                        $("#fldmrn").html((mobjson.mrn != "" ? mobjson.mrn : " - "));
+                        $("#flddob").html((mobjson.dob != "" ? dateFormat(mobjson.dob, "mm/dd/yyyy") : " - "));
+                        $("#fldsex").html((mobjson.sex != "" ? mobjson.sex : " - "));
+                        $("#fldsiblings").html((mobjson.siblings != "" ? mobjson.siblings : " - "));
+                        $("#fldrace").html((mobjson.race != "" ? mobjson.race : " - "));
+                        $("#fldother").html((mobjson.other != "" ? mobjson.other : " - "));
+                        $("#fldmarital").html((mobjson.Marriage != "" ? mobjson.Marriage : " - "));
+                        $("#fldrace1").html((mobjson.Race2 != "" ? mobjson.Race2 : " - "));
+                        $("#fldCommPref").html((mobjson.CommPref != "" ? mobjson.CommPref : " - "));
+
+                        if (mobjson.ci_address1 == "" && mobjson.ci_address2 == "" && mobjson.ci_state == "" && mobjson.ci_homephone == "" && mobjson.ci_fax == "" && mobjson.ci_cellphone == "" && mobjson.ci_email == "") {
+                            $("#sectin_coninf").hide();
+                        } else {
+                            $("#fldaddress1").html((mobjson.ci_address1 != "" ? mobjson.ci_address1 : " - "));
+                            $("#fldaddress2").html((mobjson.ci_address2 != "" ? mobjson.ci_address2 : " - "));
+                            $("#fldstate").html((mobjson.ci_state != "" ? mobjson.ci_state : " - "));
+                            $("#fldphone").html((mobjson.ci_homephone != "" ? mobjson.ci_homephone : " - "));
+                            $("#fldfax").html((mobjson.ci_fax != "" ? mobjson.ci_fax : " - "));
+                            $("#fldcell").html((mobjson.ci_cellphone != "" ? mobjson.ci_cellphone : " - "));
+                            $("#fldemail").html((mobjson.ci_email != "" ? mobjson.ci_email : " - "));
+                        }
+                        if (mobjson.eci_name == "" && mobjson.eci_address1 == "" && mobjson.eci_address2 == "" && mobjson.eci_state == "" && mobjson.eci_city == "" && mobjson.eci_zip == "" && mobjson.eci_homephone == "" && mobjson.eci_cellphone == "" && mobjson.eci_relation == "" && mobjson.eci_email == "") {
+                            $("#sectin_ci1").hide();
+                        } else {
+                            $("#fld_ci1_name").html((mobjson.eci_name != "" ? mobjson.eci_name : " - "));
+                            $("#fld_ci1_address1").html((mobjson.eci_address1 != "" ? mobjson.eci_address1 : " - "));
+                            $("#fld_ci1_address2").html((mobjson.eci_address2 != "" ? mobjson.eci_address2 : " - "));
+                            $("#fld_ci1_state").html((mobjson.eci_state != "" ? mobjson.eci_state : " - "));
+                            $("#fld_ci1_city").html((mobjson.eci_city != "" ? mobjson.eci_city : " - "));
+                            $("#fld_ci1_zip").html((mobjson.eci_zip != "" ? mobjson.eci_zip : " - "));
+                            $("#fld_ci1_phone").html((mobjson.eci_homephone != "" ? mobjson.eci_homephone : " - "));
+                            $("#fld_ci1_cell").html((mobjson.eci_cellphone != "" ? mobjson.eci_cellphone : " - "));
+                            $("#fld_ci1_relation").html((mobjson.eci_relation != "" ? mobjson.eci_relation : " - "));
+                            $("#fld_ci1_email").html((mobjson.eci_email != "" ? mobjson.eci_email : " - "));
+                        }
+                        if (mobjson.eci2_name == "" && mobjson.eci2_address1 == "" && mobjson.eci2_address2 == "" && mobjson.eci2_state == "" && mobjson.eci2_city == "" && mobjson.eci2_zip == "" && mobjson.eci2_homephone == "" && mobjson.eci2_cellphone == "" && mobjson.eci2_relation == "" && mobjson.eci2_email == "") {
+                            $("#sectin_ci2").hide();
+                        } else {
+                            $("#fld_ci2_name").html((mobjson.eci2_name != "" ? mobjson.eci2_name : " - "));
+                            $("#fld_ci2_address1").html((mobjson.eci2_address1 != "" ? mobjson.eci2_address1 : " - "));
+                            $("#fld_ci2_address2").html((mobjson.eci2_address2 != "" ? mobjson.eci2_address2 : " - "));
+                            $("#fld_ci2_state").html((mobjson.eci2_state != "" ? mobjson.eci2_state : " - "));
+                            $("#fld_ci2_city").html((mobjson.eci2_city != "" ? mobjson.eci2_city : " - "));
+                            $("#fld_ci2_zip").html((mobjson.eci2_zip != "" ? mobjson.eci2_zip : " - "));
+                            $("#fld_ci2_phone").html((mobjson.eci2_homephone != "" ? mobjson.eci2_homephone : " - "));
+                            $("#fld_ci2_cell").html((mobjson.eci2_cellphone != "" ? mobjson.eci2_cellphone : " - "));
+                            $("#fld_ci2_relation").html((mobjson.eci2_relation != "" ? mobjson.eci2_relation : " - "));
+                            $("#fld_ci2_email").html((mobjson.eci2_email != "" ? mobjson.eci2_email : " - "));
+                        }
+                        if (mobjson.wi_employer == "" && mobjson.wi_address1 == "" && mobjson.wi_address2 == "" && mobjson.wi_state == "" && mobjson.wi_city == "" && mobjson.wi_zip == "" && mobjson.wi_phone == "" && mobjson.wi_facsimile == "" && mobjson.wi_cellphone == "" && mobjson.wi_email == "" && mobjson.wi_status == "") {
+                            $("#sectin_emp_Inf").hide();
+                        } else {
+                            $("#fld_emp_name").html((mobjson.wi_employer != "" ? mobjson.wi_employer : " - "));
+                            $("#fld_emp_address1").html((mobjson.wi_address1 != "" ? mobjson.wi_address1 : " - "));
+                            $("#fld_emp_address2").html((mobjson.wi_address2 != "" ? mobjson.wi_address2 : " - "));
+                            $("#fld_emp_state").html((mobjson.wi_state != "" ? mobjson.wi_state : " - "));
+                            $("#fld_emp_city").html((mobjson.wi_city != "" ? mobjson.wi_city : " - "));
+                            $("#fld_emp_zip").html((mobjson.wi_zip != "" ? mobjson.wi_zip : " - "));
+                            $("#fld_emp_phone").html((mobjson.wi_phone != "" ? mobjson.wi_phone : " - "));
+                            $("#fld_emp_fax").html((mobjson.wi_facsimile != "" ? mobjson.wi_facsimile : " - "));
+                            $("#fld_emp_cell").html((mobjson.wi_cellphone != "" ? mobjson.wi_cellphone : " - "));
+                            $("#fld_emp_email").html((mobjson.wi_email != "" ? mobjson.wi_email : " - "));
+                            $("#fld_emp_status").html((mobjson.wi_status != "" ? mobjson.wi_status : " - "));
+                        }
+                        //if(mcolresult[54]=="-" && mcolresult[55]=="-" && mcolresult[57]=="-" && mcolresult[58]=="-" && mcolresult[59]=="-"
+                        //&& mcolresult[60]=="-" && mcolresult[61]=="-" && mcolresult[62]=="-" && mcolresult[63]=="-" && mcolresult[64]=="-" 
+                        //&& mcolresult[65]=="-" && mcolresult[66]=="-" && mcolresult[67]=="-"){
+                        if (mobjson.ins1_carrier == "-") {
+                            $("#sectin_priinscar").hide();
+                        } else {
+                            $("#fld_ins1_name").html((mobjson.ins1_carrier != "" ? mobjson.ins1_carrier : " - "));
+                            $("#fld_ins1_address").html((mobjson.ins1_address != "" ? mobjson.ins1_address : " - "));
+                            $("#fld_ins1_state").html((mobjson.ins1_state != "" ? mobjson.ins1_state : " - "));
+                            $("#fld_ins1_city").html((mobjson.ins1_city != "" ? mobjson.ins1_city : " - "));
+                            $("#fld_ins1_zip").html((mobjson.ins1_zip != "" ? mobjson.ins1_zip : " - "));
+                            $("#fld_ins1_phone").html((mobjson.ins1_phone != "" ? mobjson.ins1_phone : " - "));
+                            $("#fld_ins1_fax").html((mobjson.ins1_facsimile != "" ? mobjson.ins1_facsimile : " - "));
+                            $("#fld_ins1_plan").html((mobjson.ins1_plan != "" ? mobjson.ins1_plan : " - "));
+                            $("#fld_ins1_expiry").html((mobjson.ins1_effdate != "" ? dateFormat(mobjson.ins1_effdate, "mm/dd/yyyy") : " - "));
+                            $("#fld_ins1_idno").html((mobjson.ins1_id_no != "" ? mobjson.ins1_id_no : " - "));
+                            $("#fld_ins1_policyno").html((mobjson.ins1_policy_no != "" ? mobjson.ins1_policy_no : " - "));
+                            $("#fld_ins1_copay").html((mobjson.ins1_copay != "" ? mobjson.ins1_copay : " - "));
+                            $("#fld_ins1_subscriber").html((mobjson.ins1_subscriber != "" ? mobjson.ins1_subscriber : " - "));
+                            $("#fld_ins1_category").html((mobjson.ins1_categoryname != "" ? mobjson.ins1_categoryname : " - "));
+                            $("#fld_ins1_receiver").html((mobjson.ins1_ReceiverName != "" ? mobjson.ins1_ReceiverName : " - "));
+                            $("#fld_ins1_plantype").html((mobjson.ins1_programplantype != "" ? mobjson.ins1_programplantype : " - "));
+                            $("#fld_ins1_emrinsid").html((mobjson.ins1_CompanyId != "" ? mobjson.ins1_CompanyId : " - "));
+                            $("#fld_ins1_inctype").html((mobjson.ins1_IncentiveCategory != "" ? mobjson.ins1_IncentiveCategory : " - "));
+                            $("#fld_ins1_capitation").html((mobjson.INS1_Capitation != "" ? mobjson.INS1_Capitation : " - "));
+                            $("#fld_ins1_dnbb").html((mobjson.DNBB != "" ? mobjson.DNBB : " - "));
+                            $("#fld_ins1_expdate").html((mobjson.INS1_ExpDate != "" ? mobjson.INS1_ExpDate : " - "));
+                            $("#fld_ins1_note").html((mobjson.INS1_Notes != "" ? mobjson.INS1_Notes : " - "));
+                        }
+                        //if(mcolresult[68]=="-" && mcolresult[69]=="-" && mcolresult[71]=="-" && mcolresult[72]=="-" && mcolresult[73]=="-"
+                        //&& mcolresult[74]=="-" && mcolresult[75]=="-" && mcolresult[76]=="-" && mcolresult[77]=="-" && mcolresult[78]=="-" 
+                        //&& mcolresult[79]=="-" && mcolresult[80]=="-" && mcolresult[81]=="-"){
+                        if (mobjson.ins2_carrier == "") {
+                            $("#sectin_secinscar").hide();
+                        } else {
+                            $("#fld_ins2_name").html((mobjson.ins2_carrier != "" ? mobjson.ins2_carrier : " - "));
+                            $("#fld_ins2_address").html((mobjson.ins2_address != "" ? mobjson.ins2_address : " - "));
+                            $("#fld_ins2_state").html((mobjson.ins2_state != "" ? mobjson.ins2_state : " - "));
+                            $("#fld_ins2_city").html((mobjson.ins2_city != "" ? mobjson.ins2_city : " - "));
+                            $("#fld_ins2_zip").html((mobjson.ins2_zip != "" ? mobjson.ins2_zip : " - "));
+                            $("#fld_ins2_phone").html((mobjson.ins2_phone != "" ? mobjson.ins2_phone : " - "));
+                            $("#fld_ins2_fax").html((mobjson.ins2_facsimile != "" ? mobjson.ins2_facsimile : " - "));
+                            $("#fld_ins2_plan").html((mobjson.ins2_plan != "" ? mobjson.ins2_plan : " - "));
+                            $("#fld_ins2_expiry").html((mobjson.ins2_effdate != "" ? dateFormat(mobjson.ins2_effdate, "mm/dd/yyyy") : " - "));
+                            $("#fld_ins2_idno").html((mobjson.ins2_id_no != "" ? mobjson.ins2_id_no : " - "));
+                            $("#fld_ins2_policyno").html((mobjson.ins2_policy_no != "" ? mobjson.ins2_policy_no : " - "));
+                            $("#fld_ins2_copay").html((mobjson.ins2_copay != "" ? mobjson.ins2_copay : " - "));
+                            $("#fld_ins2_subscriber").html((mobjson.ins2_subscriber != "" ? mobjson.ins2_subscriber : " - "));
+                            $("#fld_ins2_category").html((mobjson.ins2_categoryname != "" ? mobjson.ins2_categoryname : " - "));
+                            $("#fld_ins2_receiver").html((mobjson.ins2_ReceiverName != "" ? mobjson.ins2_ReceiverName : " - "));
+                            $("#fld_ins2_plantype").html((mobjson.ins2_programplantype != "" ? mobjson.ins2_programplantype : " - "));
+                            $("#fld_ins2_emrinsid").html((mobjson.ins2_CompanyId != "" ? mobjson.ins2_CompanyId : " - "));
+                            $("#fld_ins2_inctype").html((mobjson.ins2_IncentiveCategory != "" ? mobjson.ins2_IncentiveCategory : " - "));
+                            $("#fld_ins2_msptype").html((mobjson.INS2_MSPType != "" ? mobjson.INS2_MSPType : " - "));
+                            $("#fld_ins2_expdate").html((mobjson.INS2_ExpDate != "" ? mobjson.INS2_ExpDate : " - "));
+                            $("#fld_ins2_note").html((mobjson.INS2_Notes != "" ? mobjson.INS2_Notes : " - "));
+                        }
+                        $("#fld_gname").html((mobjson.g_name != "" ? mobjson.g_name : " - "));
+                        $("#fld_gaddress").html((mobjson.g_address != "" ? mobjson.g_address : " - "));
+                        $("#fld_gstate").html((mobjson.g_state != "" ? mobjson.g_state : " - "));
+                        $("#fld_gcity").html((mobjson.g_city != "" ? mobjson.g_city : " - "));
+                        $("#fld_gzip").html((mobjson.g_zip != "" ? mobjson.g_zip : "  "));
+                        $("#fld_gphone").html((mobjson.g_phone != "" ? mobjson.g_phone : " - "));
+                        $("#fld_gfax").html((mobjson.g_facsimile != "" ? mobjson.g_facsimile : " - "));
+                        $("#fld_gcell").html((mobjson.g_cellphone != "" ? mobjson.g_cellphone : " - "));
+                        $("#fld_gemail").html((mobjson.g_email != "" ? mobjson.g_email : " - "));
+                        $("#fld_grelation").html((mobjson.g_relation != "" ? mobjson.g_relation : " - "));
+                        $("#fld_gdob").html((mobjson.g_dob != "" ? mobjson.g_dob : " - "));
+                        $("#fld_gsex").html((mobjson.g_Sex != "" ? mobjson.g_Sex : " - "));
+
+                        $("#fldcity").html((mobjson.ci_city != "" ? mobjson.ci_city : " - "));
+                        $("#fldzip").html((mobjson.ci_zip != "" ? mobjson.ci_zip : " - "));
+                        $("#fldethinicity").html((mobjson.ethinicity != "" ? mobjson.ethinicity : " - "));
+                        $("#fldlanguage").html((mobjson.language != "" ? mobjson.language : " - "));
+                        $("#fldcategory").html((mobjson.category != "" ? mobjson.category : " - "));
+                        $("#fldrefphysician").html((mobjson.refphysician != "" ? mobjson.refphysician : " - "));
+                        $("#fldptempii").html((mobjson.ptempii != "" ? mobjson.ptempii : " - "));
+                        $("#fldptrpi").html((mobjson.ptrpi != "" ? mobjson.ptrpi : " - "));
+                        $("#fldptnpi").html((mobjson.ptnpi != "" ? mobjson.ptnpi : " - "));
+
+                        $("#fld_gname2").html((mobjson.g2_name != "" ? mobjson.g2_name : " - "));
+                        $("#fld_gaddress2").html((mobjson.g2_address != "" ? mobjson.g2_address : " - "));
+                        $("#fld_gstate2").html((mobjson.g2_state != "" ? mobjson.g2_state : " - "));
+                        $("#fld_gcity2").html((mobjson.g2_city != "" ? mobjson.g2_city : " - "));
+                        $("#fld_gzip2").html((mobjson.g2_zip != "" ? mobjson.g2_zip : " - "));
+                        $("#fld_gphone2").html((mobjson.g2_phone != "" ? mobjson.g2_phone : " - "));
+                        $("#fld_gfax2").html((mobjson.g2_facsimile != "" ? mobjson.g2_facsimile : " - "));
+                        $("#fld_gcell2").html((mobjson.g2_cellphone != "" ? mobjson.g2_cellphone : " - "));
+                        $("#fld_gemail2").html((mobjson.g2_email != "" ? mobjson.g2_email : " - "));
+                        $("#fld_grelation2").html((mobjson.g2_relation != "" ? mobjson.g2_relation : " - "));
+                        $("#fld_gdob2").html((mobjson.g2_dob != "" ? mobjson.g2_dob : " - "));
+                        $("#fld_gsex2").html((mobjson.g2_Sex != "" ? mobjson.g2_Sex : " - "));
+
+                        $("#fld_pri_care_phy").html((mobjson.PcPhysician != "" ? mobjson.PcPhysician : " - "));
+                        if (mobjson.storename == "" && mobjson.addressline1 == "" && mobjson.addressline2 == "" && mobjson.city == "" && mobjson.state == "" && mobjson.zip == "" && mobjson.phoneprimary == "" && mobjson.fax == "" && mobjson.email == "") {
+                            $("#sectin_erx_phy").hide();
+                        } else {
+                            $("#flderx_def_pharmcy").html((mobjson.storename != "" ? mobjson.storename : " - "));
+                            $("#flderx_address1").html((mobjson.addressline1 != "" ? mobjson.addressline1 : " - "));
+                            $("#flderx_address2").html((mobjson.addressline2 != "" ? mobjson.addressline2 : " - "));
+                            $("#flderx_city").html((mobjson.city != "" ? mobjson.city : " - "));
+                            $("#flderx_state").html((mobjson.state != "" ? mobjson.state : " - "));
+                            $("#flderx_zip").html((mobjson.zip != "" ? mobjson.zip : " - "));
+                            $("#flderx_phone").html((mobjson.phoneprimary != "" ? mobjson.phoneprimary : " - "));
+                            $("#flderx_fax").html((mobjson.fax != "" ? mobjson.fax : " - "));
+                            $("#flderx_email").html(( mobjson.email != "" ? mobjson.email : " - "));
+                        }
+                        if (mobjson.ins_CompanyName == "" && mobjson.ins_policyno == "" && mobjson.ins_startdate == "" && mobjson.ins_end_date == "" && mobjson.ins_AccidentDate == "" && mobjson.ins_AccidentSt == "" && mobjson.ins_type == "" && mobjson.ins_notes == "") {
+                            $("#sectin_inspro_Nof").hide();
+                        } else {
+                            $("#fld_ins_cmp").html((mobjson.ins_CompanyName != "" ? mobjson.ins_CompanyName : " - "));
+                            $("#fld_ins_polnum").html((mobjson.ins_policyno != "" ? mobjson.ins_policyno : " - "));
+                            $("#fld_ins_stdt").html((mobjson.ins_startdate != "" ? mobjson.ins_startdate : " - "));
+                            $("#fld_ins_enddis").html((mobjson.ins_end_date != "" ? mobjson.ins_end_date : " - "));
+                            $("#fld_ins_acc").html((mobjson.ins_AccidentDate != "" ? mobjson.ins_AccidentDate : " - "));
+                            $("#fld_ins_st_cd").html((mobjson.ins_AccidentSt != "" ? mobjson.ins_AccidentSt : " - "));
+                            $("#fld_ins_type").html((mobjson.ins_type != "" ? mobjson.ins_type : " - "));
+                            $("#fld_ins_note").html((mobjson.ins_notes != "" ? mobjson.ins_notes : " - "));
+                        }
+                        if (mobjson.WC_CompanyName == "" && mobjson.WC_policyno == "" && mobjson.WC_startdate == "" && mobjson.WC_end_date == "" && mobjson.WC_AccidentDate == "" && mobjson.WC_AccidentSt == "" && mobjson.wcb_carrier_case_no == "" && mobjson.WC_type == "" && mobjson.WC_notes == "") {
+                            $("#sectin_inspro_wcmp").hide();
+                        } else {
+                            $("#fld_insW_cmp").html((mobjson.WC_CompanyName != "" ? mobjson.WC_CompanyName : " - "));
+                            $("#fld_insW_polnum").html((mobjson.WC_policyno != "" ? mobjson.WC_policyno : " - "));
+                            $("#fld_insW_stdt").html((mobjson.WC_startdate != "" ? mobjson.WC_startdate : " - "));
+                            $("#fld_insW_enddis").html((mobjson.WC_end_date != "" ? mobjson.WC_end_date : " - " ));
+                            $("#fld_insW_acc").html((mobjson.WC_AccidentDate != "" ? mobjson.WC_AccidentDate : " - "));
+                            $("#fld_insW_st_cd").html((mobjson.WC_AccidentSt != "" ? mobjson.WC_AccidentSt : " - "));
+                            $("#fld_insW_caseno").html((mobjson.wcb_carrier_case_no != "" ? mobjson.wcb_carrier_case_no : " - "));
+                            $("#fld_insW_type").html((mobjson.WC_type != "" ? mobjson.WC_type : " - "));
+                            $("#fld_insW_note").html((mobjson.WC_notes != "" ? mobjson.WC_notes : " - "));
+                        }
+                        $("#fldrefphysician_tel").html((mobjson.telephone1 != "" ? mobjson.telephone1 : " - "));
+                    }
+                    else {
+                        Alertify.log.error("ERROR#" + mreturndata.ErrNum + ": " + mreturndata.ErrMsg);
+                    }
+                }
+            },
+            error: function (response, textStatus, errorThrown) {
+                var mr = jQuery.parseJSON(response.responseText);
+                Alertify.log.error("ERROR#103: " + mr.Message);
+            }
+        });
+    }
+
+    function setprint() {
+        window.onbeforeprint = function () { $("#divprint").hide(); }
+        window.onafterprint = function () { $("#divprint").show(); window.onbeforeprint = null; window.onafterprint = null; }
+        window.parent.frames[0].focus();
+        //document.execCommand('print',    false,    null);
+        document.execCommand('print', false, null);
+    }
+    function GetReferralDetails(pssn) {
+    	$.ajax({
+    		type: "POST",
+    		url: urlpath + "chart_print_action.aspx/fnchart_print_loadrefphy",
+    		contentType: "application/json; charset=utf-8",
+    		data: '{ "ssn": "' + pssn + '" }',
+    		async: false,
+    		dataType: "json",
+    		success: function (ResponseText) {
+    			var mreturndata = ResponseText.d;
+    			var mobjRow, mobjCell;
+    			$('#tbl_referral tr:gt(0)').remove();    			
+    			if (mreturndata.ErrNum == "0") {
+    				var mobjitemlist = $("#tbl_referral")[0];
+    				var mobjson = mreturndata.Data.details;
+    				var mrowresult = mobjson;
+    				if (mrowresult.length >= 1) {
+    					$("#div_referral").show();
+    				}
+    				for (var mi = 0; mi < mrowresult.length; mi++) {
+    					var mcolresult = mrowresult[mi];
+    					mobjRow = $("<tr>").appendTo(mobjitemlist);
+    					mobjRow.attr("align", "center");
+    					mobjRow.attr("class", "text_meduim");
+    					mobjRow.attr("bgColor", "white");
+    					if (mi == 0 && mcolresult.referringName == 'No Referral Visit') mobjRow.hide();
+    					var mj = 0
+    					for (_obj in mcolresult) {
+    						$("<td>").attr("nowrap", "true").text(mcolresult[_obj]).appendTo(mobjRow);
+    					}
+    					if (mcolresult.rdoreferral == '-') {
+    						mobjRow = $("<tr>").attr({ "class": "text_meduim", "bgColor": "white" }).appendTo(mobjitemlist);
+    						$("<td>").attr("colSpan", "7").css("color", "red").text("There is no prior authorization visit left for this patient.").appendTo(mobjRow);
+    					}
+    				}
+    				if (mrowresult.length < 1) {
+    					mobjRow = $("<tr>").attr({ "class": "text_meduim", "bgColor": "white" }).appendTo(mobjitemlist);
+    					$("<td>").attr("colSpan", "7").css("color", "red").text("There is no prior authorization visit left for this patient.").appendTo(mobjRow);
+    				}
+    			} else if (mreturndata.ErrNum == "4") {
+					//No Data
+    			} else {
+    				Alertify.log.error("ERROR#" + mreturndata.ErrNum + ": " + mreturndata.ErrMsg);
+    			}
+    		},
+    		error: function (response, textStatus, errorThrown) {
+    			var mr = jQuery.parseJSON(response.responseText);
+    			Alertify.log.error("ERROR#103: " + mr.Message);
+    		}
+    	});
+    }
+    function GetOtherEntity(mssn) {
+        $.ajax({
+            type: "POST",
+            url: urlpath + "chart_print_action.aspx/fnchart_print_load_other_entity",
+            contentType: "application/json; charset=utf-8",
+            data: '{ "ssn": "' + mssn + '" }',
+            async: false,
+            dataType: "json",
+            success: function (ResponseText) {
+            	var mreturndata = ResponseText.d;
+                var mobjRow, mobjCell;
+                $('#tbl_oth_entity tr:gt(0)').remove();
+                if (mreturndata.ErrNum == "0") {
+                	var mobjitemlist = $("#tbl_oth_entity")[0];
+                    var mobjson = mreturndata.Data.details;
+                    if (mreturndata.ErrNum == "0") {
+                        var mrowresult = mobjson;
+                        if (mrowresult.length >= 1) {
+                           $("#div_other_entity").show();
+                        }
+                        for (var mi = 0; mi < mrowresult.length; mi++) {
+                            var mcolresult = mrowresult[mi];
+                            mobjRow = $("<tr>").appendTo(mobjitemlist);
+                            mobjRow.attr({ "align": "center", "class": "text_meduim","bgColor":"white" });
+                            for (_obj in mcolresult) {
+                                $("<td>").text((mcolresult[_obj] != "" ? mcolresult[_obj] : " - ")).appendTo(mobjRow);
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    }
+    ////////////////\\\\\\\\\\\\\\\\
+    var mSSN = trimnull(Base64.decode(querySt("ssn")));
+    var mHWND = querySt("hwnd");
+    GetData();
+    GetReferralDetails(mSSN);
+    GetOtherEntity(mSSN);
+</script>
+
+</body></html>
